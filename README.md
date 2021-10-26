@@ -1,7 +1,10 @@
 # Virtuoso Open Source 7
 
 This Docker image is based on the [official Docker image by OpenLink](https://hub.docker.com/r/openlink/virtuoso-opensource-7).
-It makes use of the [Bulk RDF Loader](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) to import RDF data on the initial startup of the container. Due to the entrypoint of the official image, this is only triggered if no ``virtuoso.ini`` is present. So if you want to use the auto-loading functionallity, configure your instance via environment variables.
+It makes use of the [Bulk RDF Loader](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) to import RDF data on the initial startup of the container.
+It will load your data if it is mounted to ``/database/toLoad``.
+Due to the entrypoint of the official image, this is only triggered if no ``virtuoso.ini`` is present.
+So if you want to use the auto-loading functionallity, configure your instance via environment variables.
 
 ### Updating virtuoso.ini via environment settings
 _This is taken from the documentation of the official Docker image by OpenLink!_
