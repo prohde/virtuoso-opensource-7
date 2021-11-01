@@ -2,7 +2,8 @@
 
 This Docker image is based on the [official Docker image by OpenLink](https://hub.docker.com/r/openlink/virtuoso-opensource-7).
 It makes use of the [Bulk RDF Loader](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) to import RDF data on the initial startup of the container.
-It will load your data if it is mounted to ``/database/toLoad``.
+It will load your data if it is mounted to ``/database/toLoad``. By default, all data will be loaded into the named graph ``http://example.com``.
+You can set the name of the default graph via the environment variable ``DEFAULT_GRAPH``.
 Due to the entrypoint of the official image, this is only triggered if no ``virtuoso.ini`` is present.
 So if you want to use the auto-loading functionallity, configure your instance via environment variables.
 
