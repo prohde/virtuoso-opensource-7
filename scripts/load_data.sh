@@ -8,9 +8,6 @@ if [ -z "$NUM_WORKERS" ]; then
 	NUM_WORKERS=$(awk -v var1=$NUM_CPU_CORES -v var2=2.5 'BEGIN { printf "%3.0f\n",  ( var1 / var2 ) }')
 fi
 
-# set allowed directories to the default ones plus /database/toLoad
-sh -c "cd /database; inifile +inifile virtuoso.ini +section Parameters +key DirsAllowed +value '., ../vad, /usr/share/proj, /database/toLoad'"
-
 virtuoso-t +wait +no-checkpoint
 isql 1111 dba dba exec="ld_dir_all('/database/toLoad', '*', '$DEFAULT_GRAPH')"
 
