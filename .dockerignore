@@ -1,4 +1,5 @@
 .git/
+.github/
 Dockerfile
 Dockerfile.alpine
 README.md
