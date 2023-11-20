@@ -1,3 +1,6 @@
+[![GitHub](https://img.shields.io/badge/GitHub-prohde/virtuoso--opensource--7-blue?logo=GitHub)](https://github.com/prohde/virtuoso-opensource-7)
+[![Docker Image](https://img.shields.io/badge/Docker%20Image-prohde/virtuoso--opensource--7-blue?logo=Docker)](https://hub.docker.com/r/prohde/virtuoso-opensource-7)
+
 # Virtuoso Open Source 7
 
 This Docker image is based on the [official Docker image by OpenLink](https://hub.docker.com/r/openlink/virtuoso-opensource-7).
