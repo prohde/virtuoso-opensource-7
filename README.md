@@ -8,7 +8,8 @@ Due to the entrypoint of the official image, this is only triggered if no ``virt
 So if you want to use the auto-loading functionallity, configure your instance via environment variables.
 
 ### Updating virtuoso.ini via environment settings
-_This is taken from the documentation of the official Docker image by OpenLink!_
+> [!NOTE]
+> This is taken from the documentation of the official Docker image by OpenLink!
 
 Using environment variables when creating the Virtuoso docker instance via the command-line options ``-e``, ``--env``, ``--env-file`` or via the **``environment``** section in a ``.yml`` file, you can add or overrule any parameter within the ``virtuoso.ini`` file.
 
